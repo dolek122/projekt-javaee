@@ -7,7 +7,7 @@
 <body>
 <h1>Rejestracja</h1>
 
-<form action="register" method="get">
+<form action="register" method="post">
     <label for="username">Nazwa użytkownika:</label><br>
     <input type="text" id="username" name="username" required><br><br>
 
@@ -16,6 +16,12 @@
 
     <label for="password">Hasło:</label><br>
     <input type="password" id="password" name="password" required><br><br>
+
+    <label for="role">Rola użytkownika:</label><br>
+    <select id="role" name="role" required>
+        <option value="CLIENT">Zwykły użytkownik</option>
+        <option value="ADMIN">Administrator</option>
+    </select><br><br>
 
     <input type="submit" value="Zarejestruj się">
 </form>

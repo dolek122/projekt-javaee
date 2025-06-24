@@ -10,10 +10,10 @@
         <class>org.example.projektjavaee.model.Reservation</class>
         <class>org.example.projektjavaee.model.LogEntry</class>
 
-        <jta-data-source>java:jboss/datasources/DefaultDS</jta-data-source>
+        <jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
 
         <properties>
-            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
+            <property name="jakarta.persistence.schema-generation.database.action" value="create"/>
             <property name="hibernate.show_sql" value="true"/>
         </properties>
     </persistence-unit>

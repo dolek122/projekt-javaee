@@ -30,7 +30,7 @@ public class UserServlet extends HttpServlet {
         User user = new User();
         user.setUsername(username);
         user.setEmail(email);
-        user.setPassword(password); // w przyszłości: zahaszować!
+        user.setPassword(password);
         user.setRole(role);
 
         try {
